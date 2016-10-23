@@ -1,0 +1,38 @@
+{
+  "name": "alfred-vue",
+  "version": "0.1.0",
+  "description": "Search for Vue.js API references on vuejs.org",
+  "license": "MIT",
+  "repository": "radibit/alfred-vue",
+  "author": "Radimir Bitsov <radimir.bitsov@gmail.com>",
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava",
+    "postinstall": "alfy-init"
+  },
+  "files": [
+    "index.js",
+    "icon.png",
+    "info.plist"
+  ],
+  "keywords": [
+    "alfred",
+    "workflow",
+    "alfy"
+  ],
+  "dependencies": {
+    "alfred-link": "^0.1.0",
+    "alfred-notifier": "^0.1.0",
+    "alfy": "^0.5.0"
+  },
+  "devDependencies": {
+    "alfy-test": "^0.3.0",
+    "ava": "^0.15.2",
+    "xo": "^0.16.0"
+  },
+  "xo": {
+    "esnext": true
+  }
+}
