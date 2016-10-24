@@ -2,6 +2,8 @@
 
 > Search for Vue.js API references on vuejs.org
 
+<img src="media/screenshot.png" width="694">
+
 
 ## Install
 
