@@ -1,6 +1,6 @@
 {
   "name": "alfred-vue",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Search for Vue.js API references on vuejs.org",
   "license": "MIT",
   "repository": "radibit/alfred-vue",
