@@ -24,13 +24,13 @@
   ],
   "dependencies": {
     "alfred-link": "^0.1.0",
-    "alfred-notifier": "^0.1.0",
+    "alfred-notifier": "^0.2.0",
     "alfy": "^0.5.0"
   },
   "devDependencies": {
     "alfy-test": "^0.3.0",
-    "ava": "^0.15.2",
-    "xo": "^0.16.0"
+    "ava": "^0.16.0",
+    "xo": "^0.17.0"
   },
   "xo": {
     "esnext": true
