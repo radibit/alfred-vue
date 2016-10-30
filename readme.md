@@ -2,7 +2,7 @@
 
 > Search for Vue.js API references on vuejs.org
 
-<img src="media/screenshot.png" width="694">
+![screencast](media/screencast.gif)
 
 
 ## Install
