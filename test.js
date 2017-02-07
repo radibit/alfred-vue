@@ -4,12 +4,12 @@ import alfyTest from 'alfy-test';
 test(async t => {
 	const alfy = alfyTest();
 
-	const result = await alfy('data');
+	const result = await alfy('v-on');
 
 	t.deepEqual(result[0], {
-		title: 'Options-Data',
-		subtitle: 'Options-Data',
-		arg: 'http://vuejs.org/api/#Options-Data',
-		quicklookurl: 'http://vuejs.org/api/#Options-Data'
+		title: 'v-on',
+		subtitle: 'API > Directives > v-on',
+		arg: 'http://vuejs.org/v2/api/#v-on',
+		quicklookurl: 'http://vuejs.org/v2/api/#v-on'
 	});
 });

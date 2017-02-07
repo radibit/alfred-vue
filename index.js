@@ -30,12 +30,25 @@ alfy.fetch(config.url, {
 })
 .then(data => {
 	const items = data.results[0].hits
-	.map(x => ({
-		title: x.anchor,
-		subtitle: x.anchor,
-		arg: x.url,
-		quicklookurl: x.url
-	}));
+	.map(x => {
+		const result = {
+			title: x.anchor,
+			subtitle: x.anchor,
+			arg: x.url,
+			quicklookurl: x.url
+		};
+
+		if (x.hierarchy) {
+			const hierarchy = Object.keys(x.hierarchy).filter(
+				objKey => Boolean(x.hierarchy[objKey])
+			).sort();
+
+			result.title = x.hierarchy[hierarchy[hierarchy.length - 1]];
+			result.subtitle = hierarchy.map(level => x.hierarchy[level]).join(' > ');
+		}
+
+		return result;
+	});
 
 	alfy.output(items);
 });
