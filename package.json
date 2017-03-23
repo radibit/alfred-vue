@@ -10,7 +10,8 @@
   },
   "scripts": {
     "test": "xo && ava",
-    "postinstall": "alfy-init"
+    "postinstall": "alfy-init",
+    "preuninstall": "alfy-cleanup"
   },
   "files": [
     "index.js",
@@ -23,9 +24,8 @@
     "alfy"
   ],
   "dependencies": {
-    "alfred-link": "^0.1.0",
     "alfred-notifier": "^0.2.0",
-    "alfy": "^0.5.0"
+    "alfy": "^0.6.0"
   },
   "devDependencies": {
     "alfy-test": "^0.3.0",

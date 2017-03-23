@@ -1,9 +1,6 @@
 'use strict';
 
 const alfy = require('alfy');
-const alfredNotifier = require('alfred-notifier');
-
-alfredNotifier();
 
 const config = {
 	url: 'bh4d9od16a-dsn.algolia.net/1/indexes/*/queries',
